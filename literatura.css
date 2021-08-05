@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+:root {
+  --body-bg-color: #e5f4f9;
+  --body-color-light: #8b939c;
+  --body-font: "Roboto", sans-serif;
+  --page-bg-color: #f2f5f7;
+  --body-color: #3d4954;
+  --border-color: #b8bec3;
+  --placeholder: #ccd0d2;
+}
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  margin: 0;
+}
+.book-slide {
+  width: 100%;
+}
+.book {
+  background: #fff;
+}
+.book-cell {
+  position: relative;
+  display: flex;
+  padding: 25px;
+  width: 40%;
+  height: 250px;
+  margin-right: 1px;
+}
+.book-cell:nth-child(1) {
+  background-color: #fbadaf;
+}
+.book-cell:nth-child(2) {
+  background-color: #a4e0eb;
+}
+.book-cell:nth-child(3) {
+  background-color: #edb9d6;
+}
+.flickity-page-dots {
+  display: none;
+}
+.flickity-prev-next-button .arrow {
+  fill: #d6d6d6;
+}
+.flickity-prev-next-button svg {
+  left: 25%;
+  top: 25%;
+  width: 50%;
+  height: 50%;
+}
+.flickity-prev-next-button.previous {
+  left: 15px;
+}
+.flickity-prev-next-button.next {
+  right: 15px;
+}
+.flickity-viewport {
+  overflow: visible;
+}
+.book-photo {
+  width: 180px;
+  flex-shrink: 0;
+  bottom: -35px;
+  left: 35px;
+  border-radius: 2px;
+  box-shadow: -2px 6px 19px 0px #7f818e;
+  transition: 0.3s ease;
+}
+.book-photo:hover {
+  transform: scale(1.03);
+}
+.book-img {
+  flex-shrink: 0;
+}
+.book-title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.book-title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 30px;
+}
+.book-author {
+  margin-top: 3px;
+  font-size: 24px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.book-content {
+  padding: 0 20px;
+  color: #ffffff;
+  overflow: hidden;
+}
+fieldset, label {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+.rating {
+  border: none;
+}
+.rating > input {
+  display: none;
+}
+.rating > label:before {
+  margin-right: 5px;
+  margin-top: 10px;
+  font-size: 0.9em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+.rating > label {
+  color: #fff;
+  float: right;
+}
+.book-see {
+  margin-top: 25px;
+  text-align: center;
+  background-color: #fff;
+  color: #fbadaf;
+  font-weight: 600;
+  padding: 8px;
+  font-size: 24px;
+  width: 160px;
+  border-radius: 20px;
+}
+.book-see:hover {
+  color: #ff6e72;
+}
+.book-see.book-blue {
+  color: #a4e0eb;
+}
+.book-see.book-blue:hover {
+  color: #22cdec;
+}
+.book-see.book-pink {
+  color: #edb9d6;
+}
+.book-see.book-pink:hover {
+  color: #ff6dbe;
+}
+.book-see.book-yellow {
+  color: #fdca95;
+}
+.book-see.book-yellow:hover {
+  color: #fb9124;
+}
+.book-see.book-purple {
+  color: #cbb5e2;
+}
+.book-see.book-purple:hover {
+  color: #a764ec;
+}
+@media (max-width: 1103px) {
+  .book-cell {
+    width: 60%;
+  }
+}
+@media (max-width: 765px) {
+  .book-cell {
+    width: 80%;
+  }
+}
+@media (max-width: 575px) {
+  .book-cell {
+    width: 100%;
+  }
+}
+@media (max-width: 458px) {
+  .book-photo {
+    width: 180px;
+  }
+  .book-voters {
+    display: none;
+  }
+}
+@media (max-width: 420px) {
+  .book-see {
+    width: 120px;
+    font-size: 13px;
+  }
+  .book-photo {
+    width: 130px;
+  }
+  .main-wrapper {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 360px) {
+  .rating > label:before {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 1220px) {
+  .card-vote {
+    display: none;
+  }
+}
+@media (max-width: 1085px) {
+  .book-rate > label {
+    font-size: 0.7em;
+  }
+}
+@media (max-width: 1045px) {
+  .books-of {
+    display: none;
+  }
+}
+@media (max-width: 725px) {
+  .browse-category, .search-bar {
+    display: none;
+  }
+  .header-title {
+    margin-right: auto;
+  }
+  .book-cards {
+    grid-template-columns: 1fr;
+  }
+  .book-types {
+    display: none;
+  }
+}
+@media (max-width: 372px) {
+  .card-content {
+    padding: 20px;
+  }
+}
