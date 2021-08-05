@@ -35,7 +35,7 @@ body {
   display: flex;
   padding: 25px;
   width: 40%;
-  height: 310px;
+  height: 330px;
   margin-right: 1px;
 }
 .book-cell:nth-child(1) {
